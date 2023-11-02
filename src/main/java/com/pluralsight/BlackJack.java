@@ -8,6 +8,7 @@ public class BlackJack {
         for(int i = 0; i < 5; i++) {
             // get a card from the deck
             Card card = deck.deal();
+            deck.shuffle();
             // deal that card to the hand
             if (card != null) {
                 hand1.deal(card);
